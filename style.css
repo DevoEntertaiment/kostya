@@ -1,0 +1,115 @@
+body
+{
+    /* height: 100%; */
+    margin: 6em auto 19em;
+    width: 1200px;
+    align-content: center;
+    background-image: url('https://7themes.su/_ph/30/275498755.jpg');
+    background-attachment: fixed;
+    color: rgba(255, 255, 255, 0.671);
+}
+.tabs {
+    position: relative;
+    float: inherit;
+    margin: 0;
+    left: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.tab, .tab-title {
+    display: inline-block; /* Выстраиваем по горизонтали */
+    background-color: royalblue;
+    
+    
+}
+.tab input[type="radio"] { display: none; }
+.tab-title {
+    background: #203de0; /* Цвет фона */
+    padding: 5px 10px; /* Поля вокруг текста */
+    border: 1px solid #666; /* Параметры рамки */
+    border-bottom: none; /* Снизу линию убираем */
+}
+.tab-content {
+    background-color: #174675; 
+    margin-bottom: 20px;
+
+    position: absolute; /* Абсолютное позиционирование */
+    border: 1px solid #203de0; /* Параметры рамки */
+    padding: 10px; /* Поля вокруг текста */
+    left: 0; /* Размещаем у левого края */
+ /*    width: 79.3%; Ширина содержимого */
+    display: none; /* Прячем вкладку */
+}
+.tab :checked + .tab-title {
+    position: relative; /* Относительное позиционирование */
+    background: #ffffff52; /* Цвет фона */
+    top: 1px; /* Сдвигаем вниз */
+    z-index: 1; /* Отображаем поверх содержимого */
+}
+.tab :checked ~ .tab-content {
+    display: block; /* Показываем активную вкладку */
+}
+.tab .body
+{
+    height: 100%;
+}
+.main
+{
+    background-color: #174675;
+    box-shadow: 0 0 15px black;
+    min-width: 0;
+    border-radius: 1%;
+    margin: 0 auto;
+}
+.ex
+{
+    height: 209px;
+}
+.page
+{
+    margin: 20px;
+    float: none;
+    margin: 0 auto;
+    outline: 2px solid #174675;
+    width: 70%;
+    grid-gap: 20px;
+    box-shadow: 0 0 15px black;
+    border-radius: 1%;    
+}
+
+h1
+{
+    
+    margin-top: 50px;
+    margin-left: 30px;
+    font-size: 35px;
+    text-align: center;
+    font-family: Verdana;
+}
+p
+{
+    margin: 30px;
+    font-size: medium;
+    text-align: justify;
+    font-family: Verdana;
+}
+.right
+{
+    margin: 6px;
+    width: auto;
+    height: 200px;
+    float: right;
+}
+.left
+{
+    margin: 6px;
+    width: auto;
+    height: 200px;
+    float: left;
+}
+a
+{
+    color: bisque;
+}
